@@ -1,5 +1,5 @@
 class Person {
-    constructor(height,weight) {
+    constructor(height, weight) {
         this.height = height;
         this.weight = weight;
         this.hobb;
@@ -17,7 +17,10 @@ class Person {
     }
 
     printAll() {
-        console.log(`${keys(Person)} - ${this.height}`);
+        for (const key in this) {
+            console.log(`${key} - ${this[key]}`);
+        }
+        
     }
 
     printHobb() {
