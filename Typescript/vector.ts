@@ -33,24 +33,30 @@ export class Vector {
         for (let i = 0; i < this.elements.length; i++) {
             a.push(this.elements[i] - v1[i])
         };
-        return a = new Vector
+        let vResultado = new Vector(1,1);
+        vResultado.elements = a;
+        return vResultado
     }
 
-    public mult(v1:Vector):number[] {
+    public mult(v1:Vector):Vector {
         let a:number[]
         a = [];
         for (let i = 0; i < this.elements.length; i++) {
             a.push(this.elements[i] * v1[i])
         };
-        return a;
+        let vResultado = new Vector(1,1);
+        vResultado.elements = a;
+        return vResultado
     }
 
-    public multNumber(n:number):number[] {
+    public multNumber(n:number):Vector {
         let a:number[]
         a = [];
         for (let i = 0; i < this.elements.length; i++) {
             a.push(this.elements[i] * n)
         };
-        return a;
+        let vResultado = new Vector(1,1);
+        vResultado.elements = a;
+        return vResultado
     }
 }
