@@ -1,6 +1,6 @@
 import { Book } from "./books"
 
-export class Library {
+export   class Library {
 
     //set up propiedades
 
@@ -54,15 +54,15 @@ export class Library {
         return this.books.length
     }
 
-    // public findByAuthor(newAuthor:string):Book[] {
-        // let b:string[];
-        // b = [];
-        // return Book[]
-        // for (let index = 0; index < this.books.length; index++) {
-        //     if (this.books[index].getAuthor == newAuthor) {
-        //         b.push(this.books[index])
-        //     }
+    public findByAuthor(newAuthor:string):Book[] {
+        let b:Book[];
+        b = [];
+        for (let index = 0; index < this.books.length; index++) {
+            if (this.books[index].getAuthor() == newAuthor) {
+                b.push(this.books[index])
+            }
             
-        // }
-    // }
+        }
+        return b;
+    }
 }
