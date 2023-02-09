@@ -144,7 +144,7 @@ function continent(country:string):void {
     console.log(`${country} esta en el continente de ${cont}`);
 };
 
-function isEven(number:number):string {
+export function isEven(number:number):string {
     let resultado:string = '';
     if (number % 2 == 0) {
         resultado = 'El numero es par'

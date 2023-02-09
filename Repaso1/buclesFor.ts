@@ -33,7 +33,7 @@ function isRainbow(colors:string[]):void {
     }
 };
 
-function add(myWords:string[]):number {
+export function add(myWords:string[]):number {
     let longitud:number = 0;
     for (const palabra of myWords) {
         longitud += palabra.length
