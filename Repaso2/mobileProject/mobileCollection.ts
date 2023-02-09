@@ -11,7 +11,7 @@ export class MobileCollection {
 
     constructor(mobiles:Mobile[]) {
         this.mobiles = mobiles;
-        this.totalPrice;
+        this.totalPrice = this.totalPriceCalculation();
     }
 
     // methods
@@ -36,6 +36,15 @@ export class MobileCollection {
         for (const phone of this.mobiles) {
             cost+= phone.getPrice();
         }
-        return cost
+        return cost;
+    }
+
+    public printCollection():string {
+        let lista:string[] = [];
+            for (const phone of this.mobiles) {
+                lista.push(phone.toString())
+            }
+        lista.push(`${this.totalPriceCalculation()}`)
+        return lista.join('\n')
     }
 }
