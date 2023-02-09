@@ -61,7 +61,6 @@ export   class Library {
             if (this.books[index].getAuthor() == newAuthor) {
                 b.push(this.books[index])
             }
-            
         }
         return b;
     }
