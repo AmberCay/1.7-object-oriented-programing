@@ -14,3 +14,4 @@ telephones.setMobiles(phoneAggregate);
 telephones.getMobiles();
 telephones.setTotalPrice(900);
 telephones.getTotalPrice();
+telephones.printCollection();
