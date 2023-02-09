@@ -97,7 +97,7 @@ function Zodiaco (day:number, month:number):string {
             signoAstro = 'Sagitario';
         }
     };
-    return `Como nacieste el ${day} del ${month} eres del signo astrologico: ${signoAstro}`;
+    return `Como naciste el ${day} del ${month} eres del signo astrologico: ${signoAstro}`;
 };
 
 function continent(country:string):void {

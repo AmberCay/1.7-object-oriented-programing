@@ -39,4 +39,4 @@ function add(myWords:string[]):number {
         longitud += palabra.length
     }
     return longitud
-}
+};
