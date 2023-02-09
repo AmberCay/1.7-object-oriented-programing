@@ -31,4 +31,11 @@ export class MobileCollection {
     public setTotalPrice(newTotalPrice:number) {
         this.totalPrice = newTotalPrice;
     }
+    private totalPriceCalculation():number {
+        let cost:number = 0;
+        for (const phone of this.mobiles) {
+            cost+= phone.getPrice();
+        }
+        return cost
+    }
 }
