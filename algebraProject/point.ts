@@ -38,7 +38,7 @@ export class Point {
         return Math.sqrt((this.x * this.x) + (this.y * this.y));
     }
 
-    public calculateDistance(anotherPoint:Point):Number {
+    public calculateDistance(anotherPoint:Point):number {
         let trianguloX:number = (this.x - anotherPoint.getX());
         let trianguloY:number = (this.y - anotherPoint.getY());
 
