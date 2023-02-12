@@ -11,3 +11,5 @@ coordenadas1.toString();
 let c2 = new Point(1,1)
 coordenadas1.distanceToOrigin();
 coordenadas1.calculateDistance(c2);
+
+coordenadas1.calculateQuadrant();
