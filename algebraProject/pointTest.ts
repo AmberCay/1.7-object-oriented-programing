@@ -8,3 +8,6 @@ coordenadas1.getX();
 coordenadas1.getY();
 coordenadas1.toString();
 
+let c2 = new Point(1,1)
+coordenadas1.distanceToOrigin();
+coordenadas1.calculateDistance(c2);
