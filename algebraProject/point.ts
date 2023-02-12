@@ -72,7 +72,7 @@ export class Point {
     calculateNearest(points:Point[]):Point {
         let closest:Point = points[0]
         for (let i = 0; i < points.length; i++) {
-            if (this.calculateDistance(points[i])) {
+            if (this.calculateDistance(points[i]) < this.calculateDistance(closest)) {
                 closest = points[i]
             }
         }
